@@ -1,4 +1,6 @@
+import { DatePipe } from '@angular/common';
 import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'todo-list';
+  date = new Date();
+  
+  // setTimeout(() => {
+  //   this.title = String(i) ;
+
+  // }, 2000);
 }

@@ -1,0 +1,17 @@
+ul{
+    list-style: none;
+}
+
+.selector li{
+    display: inline-block;
+}
+
+.open{
+    background-color:rgb(255, 230, 0);
+}
+
+.add-container{
+    padding: 40px;
+    margin: 50px 0px;
+    background-color: rgb(255, 230, 0);;
+}

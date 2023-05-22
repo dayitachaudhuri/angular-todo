@@ -1,0 +1,15 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 [ngClass]="{'strike': !todo.active}" class="card-title">{{todo.title}}</h5>
+      <h6 [ngClass]="{'strike': !todo.active}" class="card-subtitle mb-2 text-muted">{{todo.title}}</h6>
+      <p [ngClass]="{'strike': !todo.active}" class="card-text">{{todo.desc}}</p>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="done{{i}}" (click)="onCheckboxClick(todo)" [checked]="!todo.active">
+        <label class="form-check-label" for="done{{i}}">Mark as Done</label>
+      </div>
+      <div class="edit-task">
+        <button class="btn btn-dark"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+        <button class="btn btn-danger" (click)="onClick(todo)"><fa-icon [icon]="faTrashcan"></fa-icon></button>
+      </div>
+    </div>
+</div>
